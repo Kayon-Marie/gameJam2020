@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.platformer",
-    "projectFile": "/home/galen/Documents/GDevelop projects/gameJam2020/game.json",
+    "projectFile": "/home/nebula/Documents/GDevelop projects/My project/GameJam2020/game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -2552,7 +2552,12 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": true,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Leap",
+              "value": "0"
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
@@ -3266,7 +3271,12 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": true,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Leap",
+              "value": "0"
+            }
+          ],
           "behaviors": [
             {
               "name": "PlatformerObject",
@@ -5078,7 +5088,181 @@
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlatformBehavior::SetCanJump"
+                  },
+                  "parameters": [
+                    "PlayerHitBox",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "PlayerHitBox",
+                    "Leap",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlatformBehavior::IsJumping"
+                  },
+                  "parameters": [
+                    "PlayerHitBox",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlatformBehavior::IsFalling"
+                  },
+                  "parameters": [
+                    "PlayerHitBox",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "Leap",
+                "<",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlatformBehavior::SetCanJump"
+                  },
+                  "parameters": [
+                    "PlayerHitBox",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "PlayerHitBox",
+                    "Leap",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -5141,7 +5325,9 @@
               },
               "parameters": [
                 "PlayerHitBox",
-                "PlatformerObject"
+                "Leap",
+                "=",
+                "0"
               ],
               "subInstructions": []
             }
@@ -5165,6 +5351,12 @@
               "width": 0
             }
           ],
+          "effects": []
+        },
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [],
           "effects": []
         },
         {
@@ -5269,6 +5461,8 @@
           "variables": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGrabPlatforms": false,
               "deceleration": 1500,
@@ -5277,10 +5471,8 @@
               "jumpSpeed": 600,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "roundCoordinates": true,
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "xGrabTolerance": 10,
               "yGrabOffset": 0
             }
@@ -5837,2214 +6029,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "dead ",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.05,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (1).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (2).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (3).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (4).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (5).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (6).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (7).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (8).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (9).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (10).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (11).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (12).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (13).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (14).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Dead (15).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 437.031,
-                            "y": 22.5
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "jumping",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (1).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (2).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (3).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (4).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (5).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (6).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (7).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (8).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (9).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (10).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (11).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (12).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (13).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (14).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Jump (15).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 313.698,
-                            "y": 10
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "running",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (1).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (2).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (3).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (4).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (5).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (6).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (7).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (8).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (9).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (10).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (11).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (12).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (13).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (14).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Run (15).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 400.365,
-                            "y": 0
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "walk",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (1).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (2).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (3).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (4).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (5).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (6).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (7).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (8).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (9).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (10).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (11).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (12).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (13).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (14).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "flatboy/png/Walk (15).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 157.031,
-                        "y": 270
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7.03125,
-                            "y": 15
-                          },
-                          {
-                            "x": 289.531,
-                            "y": 15
-                          },
-                          {
-                            "x": 302.031,
-                            "y": 505
-                          },
-                          {
-                            "x": 2.03125,
-                            "y": 510
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
@@ -8058,10 +6042,10 @@
           "variables": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
