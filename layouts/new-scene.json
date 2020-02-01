@@ -1398,7 +1398,12 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": true,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Leap",
+          "value": "0"
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -2112,7 +2117,12 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": true,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Leap",
+          "value": "0"
+        }
+      ],
       "behaviors": [
         {
           "name": "PlatformerObject",
@@ -3345,11 +3355,44 @@
         {
           "type": {
             "inverted": false,
-            "value": "PlatformBehavior::IsJumping"
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsJumping"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsFalling"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            }
+          ]
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "VarObjet"
           },
           "parameters": [
             "PlayerHitBox",
-            "PlatformerObject"
+            "Leap",
+            "<",
+            "2"
           ],
           "subInstructions": []
         }
@@ -3368,7 +3411,61 @@
           "subInstructions": []
         }
       ],
-      "events": []
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Space"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::SetCanJump"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "Leap",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
     },
     {
       "disabled": false,
@@ -3378,49 +3475,39 @@
         {
           "type": {
             "inverted": false,
-            "value": "PlatformBehavior::IsFalling"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "PlayerHitBox",
-            "PlatformerObject"
-          ],
-          "subInstructions": []
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            }
+          ]
         }
       ],
       "actions": [
         {
           "type": {
             "inverted": false,
-            "value": "ChangeAnimation"
-          },
-          "parameters": [
-            "Player",
-            "=",
-            "1"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "PlatformBehavior::IsOnFloor"
+            "value": "ModVarObjet"
           },
           "parameters": [
             "PlayerHitBox",
-            "PlatformerObject"
+            "Leap",
+            "=",
+            "0"
           ],
           "subInstructions": []
         }
       ],
-      "actions": [],
       "events": [
         {
           "disabled": false,
@@ -3489,6 +3576,14 @@
           "events": []
         }
       ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
+      "events": []
     },
     {
       "disabled": false,
