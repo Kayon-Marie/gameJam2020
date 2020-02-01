@@ -469,6 +469,681 @@
         "name": "shadedDark09.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (3).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (4).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (5).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (6).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (7).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (8).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (9).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (10).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (11).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (11).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (12).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (12).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (13).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (13).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (14).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (14).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Dead (15).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Dead (15).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (3).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (4).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (5).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (6).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (7).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (8).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (9).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (10).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (11).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (11).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (12).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (12).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (13).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (13).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (14).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (14).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Idle (15).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Idle (15).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (3).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (4).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (5).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (6).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (7).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (8).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (9).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (10).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (11).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (11).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (12).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (12).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (13).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (13).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (14).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (14).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Jump (15).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Jump (15).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (3).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (4).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (5).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (6).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (7).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (8).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (9).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (10).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (11).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (11).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (12).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (12).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (13).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (13).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (14).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (14).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Run (15).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Run (15).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (3).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (4).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (5).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (6).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (7).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (8).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (9).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (10).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (10).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (11).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (11).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (12).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (12).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (13).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (13).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (14).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (14).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flatboy/png/Walk (15).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flatboy/png/Walk (15).png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -480,6 +1155,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/new-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level1"
     }
   ],
   "externalEvents": [
