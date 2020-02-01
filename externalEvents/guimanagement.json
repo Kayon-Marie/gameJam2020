@@ -1,0 +1,28 @@
+{
+  "associatedLayout": "New scene",
+  "lastChangeTimeStamp": 1383151997,
+  "name": "GUIManagement",
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "Score",
+            "=",
+            "\"x \"+ToString(Variable(Score))"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    }
+  ]
+}
