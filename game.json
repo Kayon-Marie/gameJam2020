@@ -1246,10 +1246,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "Bomb/Bomb_f01.png",
         "kind": "image",
         "metadata": "",
         "name": "Bomb/Bomb_f01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack2.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1264,10 +1282,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "Bomb/Bomb_f03.png",
         "kind": "image",
         "metadata": "",
         "name": "Bomb/Bomb_f03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/BG/BG.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/BG/BG.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1334,10 +1370,37 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/BG/BG-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/BG/BG-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000006.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000006.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/2.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1352,10 +1415,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000008.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/17.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1370,10 +1451,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000010.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000010.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SoilMiddle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SoilMiddle.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1388,10 +1487,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceLeftCrumble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceLeftCrumble.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000012.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000012.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SoilLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SoilLeft.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1406,10 +1523,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceMiddle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceMiddle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000014.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000014.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/WaterSurface.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/WaterSurface.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1433,10 +1568,37 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/CliffLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/CliffLeft.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceLeftCurve.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceLeftCurve.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000017.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000017.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SoilRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SoilRight.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1451,10 +1613,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceRightCrumble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceRightCrumble.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000019.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000019.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceRightCurve.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceRightCurve.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1469,10 +1649,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/CliffRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/CliffRight.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000021.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000021.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceMiddleCrumble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceMiddleCrumble.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1487,10 +1685,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Crate.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Crate.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000023.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000023.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/WaterDepth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/WaterDepth.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1505,10 +1721,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Tree_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Tree_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000025.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000025.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Tree_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Tree_1.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1523,10 +1757,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Tree_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Tree_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000027.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000027.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Stone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Stone.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1541,10 +1793,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Mushroom_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Mushroom_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "play button 300x80 hover/Play button 300x80 hover000029.png",
         "kind": "image",
         "metadata": "",
         "name": "play button 300x80 hover/Play button 300x80 hover000029.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Mushroom_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Mushroom_2.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1559,6 +1829,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Bush (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Bush (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "block1.png",
         "kind": "image",
         "metadata": "",
@@ -1568,10 +1847,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Bush (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Bush (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "Box.png",
         "kind": "image",
         "metadata": "",
         "name": "Box.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Bush (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Bush (3).png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1610,6 +1907,15 @@
         "kind": "audio",
         "metadata": "",
         "name": "music/Ipsi.mp3",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Bush (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Bush (4).png",
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -1626,6 +1932,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/new-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/lvl1map"
     }
   ],
   "externalEvents": [
