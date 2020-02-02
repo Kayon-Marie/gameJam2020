@@ -1153,6 +1153,464 @@
         "name": "Blackground-1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_04.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_05.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_05.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_06.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_06.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_07.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_07.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_08.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_08.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_09.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_09.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "explosion/l0_explosion_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "explosion/l0_explosion_10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Bomb/Bomb_f01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bomb/Bomb_f01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Bomb/Bomb_f02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bomb/Bomb_f02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Bomb/Bomb_f03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bomb/Bomb_f03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "music/Off Limits.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/Off Limits.wav",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "playbutton.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "playbutton.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000001.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000002.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000003.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000004.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000005.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000006.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000007.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000009.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000010.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000011.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000012.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000013.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000013.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000014.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000014.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000015.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000015.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000016.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000016.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000017.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000017.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000018.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000018.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000019.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000019.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000020.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000020.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000021.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000021.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000022.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000022.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000023.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000024.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000025.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000025.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000026.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000026.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000027.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000027.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000028.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000028.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000029.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000029.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "play button 300x80 hover/Play button 300x80 hover000030.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "play button 300x80 hover/Play button 300x80 hover000030.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "block1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "block1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Box.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "nameframe.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "nameframe.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "01 Kanye West - Every Hour.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "01 Kanye West - Every Hour.mp3",
+        "userAdded": false
+      },
+      {
+        "file": "coin.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "coin.wav",
+        "userAdded": false
+      },
+      {
+        "file": "08 Kanye West - God Is.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "08 Kanye West - God Is.mp3",
+        "userAdded": false
+      },
+      {
+        "file": "music/Ipsi.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/Ipsi.mp3",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1163,11 +1621,11 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/new-scene"
+      "referenceTo": "/layouts/splash-screen"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/level1"
+      "referenceTo": "/layouts/new-scene"
     }
   ],
   "externalEvents": [
