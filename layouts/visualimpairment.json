@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": true,
-    "zoomFactor": 0.442
+    "zoomFactor": 0.418
   },
   "objectsGroups": [
     {
@@ -1408,14 +1408,14 @@
     },
     {
       "angle": 0,
-      "customSize": true,
+      "customSize": false,
       "height": 1166,
       "layer": "Visual Impair",
       "locked": false,
       "name": "BigBlackBox",
       "width": 1184,
-      "x": -12,
-      "y": 263,
+      "x": 2,
+      "y": 271,
       "zOrder": 33,
       "numberProperties": [],
       "stringProperties": [],
@@ -5168,7 +5168,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "Light",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -5280,8 +5280,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 450,
-                    "y": 450
+                    "x": 494.286,
+                    "y": 1110.71
                   },
                   "centerPoint": {
                     "automatic": true,
