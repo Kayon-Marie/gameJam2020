@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": true,
-    "zoomFactor": 0.5306
+    "zoomFactor": 0.6986
   },
   "objectsGroups": [
     {
@@ -1387,6 +1387,21 @@
       "x": 1890,
       "y": 350,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 63,
+      "layer": "",
+      "locked": false,
+      "name": "OceanSurface",
+      "width": 179,
+      "x": 240.457,
+      "y": 177.159,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []

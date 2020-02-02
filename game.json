@@ -1144,6 +1144,312 @@
         "name": "flatboy/png/Walk (15).png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "craftpix-891178-free-3-character-sprite-sheets-pixel-art/3 SteamMan/SteamMan_attack3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/BG/BG.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/BG/BG.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/BG/BG-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/BG/BG-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/17.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SoilMiddle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SoilMiddle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceLeftCrumble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceLeftCrumble.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SoilLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SoilLeft.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceMiddle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceMiddle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/WaterSurface.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/WaterSurface.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/CliffLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/CliffLeft.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceLeftCurve.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceLeftCurve.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SoilRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SoilRight.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceRightCrumble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceRightCrumble.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceRightCurve.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceRightCurve.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/CliffRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/CliffRight.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/SurfaceMiddleCrumble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/SurfaceMiddleCrumble.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Crate.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Crate.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Tiles/WaterDepth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Tiles/WaterDepth.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Tree_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Tree_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Tree_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Tree_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Tree_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Tree_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Stone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Stone.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Mushroom_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Mushroom_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Mushroom_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Mushroom_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Bush (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Bush (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Bush (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Bush (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Bush (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Bush (3).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "freetileset/png/Object/Bush (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "freetileset/png/Object/Bush (4).png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1158,7 +1464,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/level1"
+      "referenceTo": "/layouts/lvl1map"
     }
   ],
   "externalEvents": [
