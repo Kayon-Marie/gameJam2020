@@ -238,15 +238,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "bridge.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bridge.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "grassHalfMid.png",
         "kind": "image",
         "metadata": "",
@@ -1165,6 +1156,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "VisImpairView-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "VisImpairView-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "explosion/l0_explosion_02.png",
         "kind": "image",
         "metadata": "",
@@ -1573,6 +1573,15 @@
         "metadata": "",
         "name": "freetileset/png/Tiles/CliffLeft.png",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Light.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Light.png",
+        "smoothed": true,
         "userAdded": false
       },
       {
@@ -1865,6 +1874,24 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "BlindBlackBox-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BlindBlackBox-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Light-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Light-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "freetileset/png/Object/Bush (3).png",
         "kind": "image",
         "metadata": "",
@@ -1874,10 +1901,28 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "Light-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Light-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "nameframe.png",
         "kind": "image",
         "metadata": "",
         "name": "nameframe.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BlindBlackBox-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BlindBlackBox-1-0.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1917,6 +1962,51 @@
         "name": "freetileset/png/Object/Bush (4).png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BlindBlackBox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BlindBlackBox.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject3-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject3-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject3-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject3-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject3-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject3-1-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1931,11 +2021,15 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/new-scene"
+      "referenceTo": "/layouts/lvl1map"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/lvl1map"
+      "referenceTo": "/layouts/lvl2map"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/visualimpairment"
     }
   ],
   "externalEvents": [
@@ -1950,6 +2044,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/guimanagement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/visualimpairment"
     }
   ],
   "eventsFunctionsExtensions": [],
