@@ -1,8 +1,8 @@
 {
   "b": 247,
   "disableInputWhenNotFocused": true,
-  "mangledName": "New_32scene",
-  "name": "New scene",
+  "mangledName": "VisualImpairment",
+  "name": "VisualImpairment",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
