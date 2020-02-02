@@ -2032,6 +2032,20 @@
         "metadata": "",
         "name": "music/explosion.mp3",
         "userAdded": true
+      },
+      {
+        "file": "music/roblox-death-sound_1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/roblox-death-sound_1.mp3",
+        "userAdded": false
+      },
+      {
+        "file": "music/explosion.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/explosion.wav",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
