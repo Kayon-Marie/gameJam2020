@@ -1328,7 +1328,7 @@
       "locked": false,
       "name": "Prompt",
       "width": 0,
-      "x": 1179,
+      "x": 1189,
       "y": 180,
       "zOrder": 56,
       "numberProperties": [],
@@ -1343,9 +1343,39 @@
       "locked": false,
       "name": "Prompt",
       "width": 0,
-      "x": 2973,
-      "y": 208,
+      "x": 2988,
+      "y": 211,
       "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Prompt",
+      "width": 0,
+      "x": 1996,
+      "y": 294,
+      "zOrder": 58,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Prompt",
+      "width": 0,
+      "x": 2836,
+      "y": 373,
+      "zOrder": 59,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4786,7 +4816,7 @@
     },
     {
       "bold": true,
-      "italic": false,
+      "italic": true,
       "name": "Prompt",
       "smoothed": true,
       "tags": "",
@@ -4796,11 +4826,11 @@
       "behaviors": [],
       "string": "Press 'R'",
       "font": "",
-      "characterSize": 20,
+      "characterSize": 14,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 65,
+        "g": 156,
+        "r": 248
       }
     }
   ],
@@ -5837,7 +5867,7 @@
               },
               "parameters": [
                 "",
-                "coin.wav",
+                "music/collect.mp3",
                 "",
                 "",
                 "",
@@ -5863,6 +5893,248 @@
               },
               "parameters": [
                 "cure1",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Prompt"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "cure1",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Prompt"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerHitBox",
+            "cure3",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Montre"
+          },
+          "parameters": [
+            "Prompt",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "r"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "music/collect.mp3",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "v",
+                "\"Visual Impair\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "cure3",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Prompt"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerHitBox",
+            "cure2",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Montre"
+          },
+          "parameters": [
+            "Prompt",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "r"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "music/collect.mp3",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "v",
+                "\"Visual Impair\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "cure2",
                 ""
               ],
               "subInstructions": []

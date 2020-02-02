@@ -2089,6 +2089,13 @@
         "name": "button.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "music/collect.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/collect.mp3",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
