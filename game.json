@@ -2007,6 +2007,31 @@
         "name": "NewObject3-1-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject3-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject3-1-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject3-1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject3-1-3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "music/explosion.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/explosion.mp3",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
